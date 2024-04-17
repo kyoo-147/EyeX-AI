@@ -15,7 +15,7 @@ Người dùng có thể chọn một trong các tùy chọn bên dưới để 
 Bạn chỉ cần clone repo này và cài đặt các phần phụ thuộc cần thiết bằng `yarn`.
 Đoạn mã minh họa sau:
 ```bash
-git clone https://github.com/kyoo-147/eyex-ai.git
+git clone https://github.com/kyoo-147/EyeX-AI.git
 cd eyex-ai
 yarn install
 # optional

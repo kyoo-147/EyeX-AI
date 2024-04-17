@@ -316,7 +316,7 @@ const handleMicrophoneClick = () => {
                   <span className="inline-block ml-2">
                     Mô hình LLM mặc định dựa trên cấu trúc Mistral-7B do Ollama chạy cục bộ. Bạn sẽ cần cài đặt <a target="_blank" href="https://ollama.ai">ứng dụng máy tính để bàn Ollama</a> và chạy các lệnh sau để cấp quyền truy cập vào mô hình chạy cục bộ:
                     <br/>
-                    <pre className="inline-flex px-2 py-1 my-2 rounded">$ OLLAMA_ORIGINS=https://eyex_ai.vercel.app OLLAMA_HOST=127.0.0.1:11434 ollama serve
+                    <pre className="inline-flex px-2 py-1 my-2 rounded">$ OLLAMA_ORIGINS=https://eyex-ai.vercel.app OLLAMA_HOST=127.0.0.1:11434 ollama serve
                     </pre>
                     <br/>
                     Sau đó, tại một terminal thứ hai:
