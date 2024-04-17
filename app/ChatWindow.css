@@ -1,0 +1,48 @@
+/* // # !/usr/bin/env python3
+// # -*- encoding: utf-8 -*-
+// # Copyright EyeX-AI. All Rights Reserved.
+// # NaVin AIF Technology
+// # MIT License  (https://opensource.org/licenses/MIT) */
+.chat-window {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .input-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 500px; /* Adjust the max width as needed */
+    margin-top: 20px;
+  }
+  
+  input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+  }
+  
+  .send-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .send-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Adjust icon size if needed */
+  .send-button svg {
+    width: 20px;
+    height: 20px;
+  }
+  

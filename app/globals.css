@@ -1,0 +1,134 @@
+/* // # !/usr/bin/env python3
+// # -*- encoding: utf-8 -*-
+// # Copyright EyeX-AI. All Rights Reserved.
+// # NaVin AIF Technology
+// # MIT License  (https://opensource.org/licenses/MIT) */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  color: #0ad59f;
+  background: #121212;
+}
+
+body input,
+body textarea {
+  color: rgb(47, 45, 45);
+}
+
+a {
+  color: #18ee4a;
+}
+
+a:hover { 
+  border-bottom: 1px solid;
+}
+
+p {
+  margin: 8px 0;
+}
+
+code,
+pre {
+  color: #e85500;
+}
+
+pre {
+  background-color: rgb(21, 20, 20);
+  color: #62ed05;
+}
+
+li {
+  padding: 4px;
+}
+
+/* App.css */
+.microphone-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #f0f0f0;
+}
+
+.text-input {
+  flex: 1;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+
+.microphone-icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}
+
+.send-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+#backgroundVideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.container {
+  position: relative;
+}
+
+.container p,
+.container button {
+  position: absolute;
+  /* Style and position each element as needed */
+}
+
+.videoPlayer {
+  /* Định nghĩa kiểu cho phần tử video */
+  width: 50%;
+  height: auto; /* hoặc bạn có thể thiết lập chiều cao cố định nếu cần */
+}
+
+
+
+@layer base {
+  label {
+    @apply h-6 relative inline-block;
+  }
+
+  [type="checkbox"] {
+    @apply w-11 h-0 cursor-pointer inline-block;
+    @apply focus:outline-0 dark:focus:outline-0;
+    @apply border-0 dark:border-0;
+    @apply focus:ring-offset-transparent dark:focus:ring-offset-transparent;
+    @apply focus:ring-transparent dark:focus:ring-transparent;
+    @apply focus-within:ring-0 dark:focus-within:ring-0;
+    @apply focus:shadow-none dark:focus:shadow-none;
+
+    @apply after:absolute before:absolute;
+    @apply after:top-0 before:top-0;
+    @apply after:block before:inline-block;
+    @apply before:rounded-full after:rounded-full;
+
+    @apply after:content-[''] after:w-5 after:h-5 after:mt-0.5 after:ml-0.5;
+    @apply after:shadow-md after:duration-100;
+
+    @apply before:content-[''] before:w-10 before:h-full;
+    @apply before:shadow-[inset_0_0_#000];
+
+    @apply after:bg-white dark:after:bg-gray-50;
+    @apply before:bg-gray-300 dark:before:bg-gray-600;
+    @apply before:checked:bg-lime-500 dark:before:checked:bg-lime-500;
+    @apply checked:after:duration-300 checked:after:translate-x-4;
+
+    @apply disabled:after:bg-opacity-75 disabled:cursor-not-allowed;
+    @apply disabled:checked:before:bg-opacity-40;
+  }
+}
